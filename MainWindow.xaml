@@ -6,7 +6,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TNS"
         mc:Ignorable="d"
-        Title="Телеком Нева Связь" Height="450" Width="800">
+        Title="Телеком Нева Связь" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
@@ -21,19 +21,18 @@
         <Image Grid.Row="0" Grid.Column="2" Source="/Resources/Лого ТНС.jpg"  d:LayoutOverrides="LeftMargin, RightMargin, TopMargin, BottomMargin" />
         <Label Style="{StaticResource main}" Grid.ColumnSpan="2" VerticalAlignment="Center" Margin="35,0,0,0">Телеком Нева Связь</Label>
         <WrapPanel Grid.Row="2" Grid.Column="1" Style="{StaticResource WrPanel}">
-            <Button Style="{StaticResource but}" Content="Отмена"></Button>
-            <Button Style="{StaticResource but}" Content="Вход"></Button>
+            <Button x:Name="Отмена" Click="Отмена_Click" Style="{StaticResource but}" Content="Отмена"></Button>
+            <Button x:Name="Вход" Click="Вход_Click" Style="{StaticResource but}" Content="Вход"></Button>
         </WrapPanel>
         <Grid Grid.Row="1" Grid.Column="1">
             <Grid.RowDefinitions>
-                <RowDefinition Height="59*"/>
-                <RowDefinition Height="65*"/>
-                <RowDefinition Height="62*"/>
-                <RowDefinition Height="48*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="97*"/>
-                <ColumnDefinition Width="261*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="3*"/>
             </Grid.ColumnDefinitions>
             <TextBox Style="{StaticResource textbox}" Grid.Row="0" Grid.Column="1"></TextBox>
             <TextBox Style="{StaticResource textbox}" Grid.Row="1" Grid.Column="1"></TextBox>
@@ -46,7 +45,7 @@
                     <ColumnDefinition Width="26*"/>
                 </Grid.ColumnDefinitions>
                 <TextBox Style="{StaticResource textbox}" Grid.Row="0" Grid.Column="0"></TextBox>
-                <Button Grid.Row="0" Grid.Column="1" BorderBrush="{x:Null}" Margin="22.8,2,9.6,0">
+                <Button Grid.Row="0" Grid.Column="1" BorderBrush="{x:Null}" Margin="28.2,2,9.6,10">
                     <Button.Background>
                         <ImageBrush ImageSource="Resources/На авторизацию_Обновление кода.jpg"/>
                     </Button.Background>

@@ -71,6 +71,24 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Windows\CRM.xaml.cs">
+      <DependentUpon>CRM.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Абоненты.xaml.cs">
+      <DependentUpon>Абоненты.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Активы.xaml.cs">
+      <DependentUpon>Активы.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Биллинг.xaml.cs">
+      <DependentUpon>Биллинг.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\ПоддержкаПользователей.xaml.cs">
+      <DependentUpon>ПоддержкаПользователей.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\УправлениеОборудованием.xaml.cs">
+      <DependentUpon>УправлениеОборудованием.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -84,6 +102,30 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Styles\Dictionary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\CRM.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Абоненты.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Активы.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Биллинг.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\ПоддержкаПользователей.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\УправлениеОборудованием.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -105,6 +147,7 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -159,9 +202,7 @@
     <Resource Include="Resources\Сотрудники\ID1545.jpg" />
     <Resource Include="Resources\Сотрудники\Фото для заглушки при отсутствии фото сотрудника.jpg" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Windows\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
       <Visible>False</Visible>

@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using TNS.Windows;
 
 namespace TNS
 {
@@ -23,6 +24,18 @@ namespace TNS
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Вход_Click(object sender, RoutedEventArgs e)
+        {
+            Абоненты абоненты = new Абоненты();
+            абоненты.Show();
+            Hide();
+        }
+
+        private void Отмена_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

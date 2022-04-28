@@ -21,6 +21,14 @@
         <Setter Property="Background" Value="#FFB9B7B7"/>
     </Style>
 
+    <Style TargetType="Button" x:Key="button">
+        <Setter Property="FontSize" Value="10"/>
+        <Setter Property="Height" Value="30"/>
+        <Setter Property="Width" Value="110"/>
+        <Setter Property="Margin" Value="10"/>
+        <Setter Property="Background" Value="#FFB9B7B7"/>
+    </Style>
+
     <Style TargetType="TextBox" x:Key="textbox">
         <Setter Property="FontSize" Value="24"/>
         <Setter Property="BorderBrush" Value="#FF64666A"/>

@@ -1,0 +1,32 @@
+﻿<Window Style="{StaticResource win}"
+        x:Class="TNS.Windows.ПоддержкаПользователей"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TNS.Windows"
+        mc:Ignorable="d"
+        Title="ПоддержкаПользователей" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="5*"/>
+        </Grid.ColumnDefinitions>
+        <WrapPanel>
+            <Image Source="/Resources/Лого ТНС.jpg" VerticalAlignment="Top"/>
+            <Button x:Name="Абоненты" Click="Абоненты_Click" Content="Абоненты" Style="{StaticResource button}"></Button>
+            <Button x:Name="УправлениеОборудованием" Click="УправлениеОборудованием_Click" Style="{StaticResource button}">
+                <TextBlock>Управление<LineBreak/>оборудованием</TextBlock>
+            </Button>
+            <Button x:Name="Активы" Click="Активы_Click" Content="Активы" Style="{StaticResource button}"></Button>
+            <Button x:Name="Биллинг" Click="Биллинг_Click" Content="Биллинг" Style="{StaticResource button}"></Button>
+            <Button x:Name="поддержкаПользователей" Click="поддержкаПользователей_Click" Style="{StaticResource button}">
+                <TextBlock>Поддержка<LineBreak/>пользователей</TextBlock>
+            </Button>
+            <Button x:Name="CRM" Click="CRM_Click" Content="CRM" Style="{StaticResource button}"></Button>
+        </WrapPanel>
+        <WrapPanel Grid.Column="1">
+            <Label Content="Поддержка пользователей" Style="{StaticResource main}" Margin="30,25,0,0"></Label>
+        </WrapPanel>
+    </Grid>
+</Window>
